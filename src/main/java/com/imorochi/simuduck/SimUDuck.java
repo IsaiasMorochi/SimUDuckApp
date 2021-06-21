@@ -3,23 +3,13 @@ package com.imorochi.simuduck;
 public class SimUDuck {
 
     public static void main(String[] args) {
-
-        Duck domesticDuck = new DomesticDuck();
-        domesticDuck.display();
-        domesticDuck.swim();
-        domesticDuck.quack();
-        domesticDuck.fly();
-
-        System.out.println("*********************");
-
-        Duck rubberDuck = new RubberDuck();
+        RubberDuck rubberDuck = new RubberDuck();
         rubberDuck.display();
         rubberDuck.swim();
         rubberDuck.quack();
-        rubberDuck.fly();
         System.out.println("*********************");
 
-        Duck mallarDuck = new MallarDuck();
+        MallarDuck mallarDuck = new MallarDuck();
         mallarDuck.display();
         mallarDuck.swim();
         mallarDuck.quack();
@@ -27,15 +17,14 @@ public class SimUDuck {
 
         System.out.println("*********************");
 
-        Duck realDuck = new RealDuck();
+        RealDuck realDuck = new RealDuck();
         realDuck.display();
         realDuck.swim();
-        realDuck.quack();
         realDuck.fly();
 
         System.out.println("*********************");
 
-        Duck redheadDuck = new RedheadDuck();
+        RedheadDuck redheadDuck = new RedheadDuck();
         redheadDuck.display();
         redheadDuck.swim();
         redheadDuck.quack();
@@ -43,11 +32,9 @@ public class SimUDuck {
 
         System.out.println("*********************");
 
-        Duck decoyDuck = new DecoyDuck();
+        DecoyDuck decoyDuck = new DecoyDuck();
         decoyDuck.display();
         decoyDuck.swim();
-        decoyDuck.quack();
-        decoyDuck.fly();
 
     }
 
