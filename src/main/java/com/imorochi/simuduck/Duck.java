@@ -12,5 +12,9 @@ public abstract class Duck {
 
     public abstract void display();
 
+    public void fly() {
+        System.out.println("Duck's flying.");
+    }
+
     // OTHER duck-like methods.
 }
