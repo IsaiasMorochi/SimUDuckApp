@@ -1,5 +1,5 @@
 package com.imorochi.simuduck;
 
-public interface Flyable {
+public interface FlyBehavior {
     void fly();
 }
