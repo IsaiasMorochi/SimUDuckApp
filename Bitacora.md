@@ -31,10 +31,18 @@ we want to add another behavior by reason, we would have to go to all classes an
 From now on, the Duck behaviors will live in a separate class—a class that implements a particular behavior interface. 
 That way, the Duck classes won’t need to know any of the implementation details for their own behaviors.
 
-> ### Design Principle
+> #### Design Principle
 > Program to an interface, not an implementation.
 
 ### Solution #2
 Create two interfaces, FlyBehavior and QuackBehavior where each class implements its specific behavior, 
 and then the Duck class creates two instance variables that are declared as interface type, each Duck could 
 reference the specific behaviors at runtime (FlyWithWings, Squeak, etc. )
+
+> #### Design Principle
+> Favor composition over inheritance.
+
+### Conclusions
+As you’ve seen, creating systems using composition gives you a lot more flexibility. Not only does it let you encapsulate
+a family of algorithms into their own set of classes, but it also lets you change behavior at runtime as long as
+the object you’re composing with implements the correct behavior interface.

@@ -1,6 +1,6 @@
 package com.imorochi.simuduck;
 
-public class SimUDuck {
+public class SimUDuckApp {
 
     public static void main(String[] args) {
         Duck rubberDuck = new RubberDuck();
@@ -40,6 +40,13 @@ public class SimUDuck {
         decoyDuck.performQuack();
         decoyDuck.performFly();
 
+        System.out.println("*********************");
+
+        Duck modelDuck = new ModelDuck();
+        modelDuck.display();
+        decoyDuck.performFly();
+        decoyDuck.setFlyBehavior(new FlyRocketPowered());
+        decoyDuck.performFly();
     }
 
 }

@@ -3,7 +3,7 @@ package com.imorochi.simuduck;
 public class RubberDuck extends Duck {
 
     public RubberDuck() {
-        quackBehavior = new Quack();
+        quackBehavior = new Squeak();
         flyBehavior = new FlyNoWay();
     }
 
