@@ -41,6 +41,14 @@ public class SimUDuck {
         redheadDuck.quack();
         redheadDuck.fly();
 
+        System.out.println("*********************");
+
+        Duck decoyDuck = new DecoyDuck();
+        decoyDuck.display();
+        decoyDuck.swim();
+        decoyDuck.quack();
+        decoyDuck.fly();
+
     }
 
 }
