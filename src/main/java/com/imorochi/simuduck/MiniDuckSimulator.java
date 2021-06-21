@@ -1,6 +1,8 @@
 package com.imorochi.simuduck;
 
-public class SimUDuckApp {
+public class MiniDuckSimulator {
+
+    private static final String SEPARATOR = "*********************";
 
     public static void main(String[] args) {
         Duck rubberDuck = new RubberDuck();
@@ -9,7 +11,7 @@ public class SimUDuckApp {
         rubberDuck.performQuack();
         rubberDuck.performFly();
 
-        System.out.println("*********************");
+        System.out.println(SEPARATOR);
 
         Duck mallarDuck = new MallarDuck();
         mallarDuck.display();
@@ -17,14 +19,14 @@ public class SimUDuckApp {
         mallarDuck.performQuack();
         mallarDuck.performFly();
 
-        System.out.println("*********************");
+        System.out.println(SEPARATOR);
 
         Duck realDuck = new RealDuck();
         realDuck.display();
         realDuck.swim();
         realDuck.performFly();
 
-        System.out.println("*********************");
+        System.out.println(SEPARATOR);
 
         Duck redheadDuck = new RedheadDuck();
         redheadDuck.display();
@@ -32,7 +34,7 @@ public class SimUDuckApp {
         redheadDuck.performQuack();
         redheadDuck.performFly();
 
-        System.out.println("*********************");
+        System.out.println(SEPARATOR);
 
         Duck decoyDuck = new DecoyDuck();
         decoyDuck.display();
@@ -40,7 +42,7 @@ public class SimUDuckApp {
         decoyDuck.performQuack();
         decoyDuck.performFly();
 
-        System.out.println("*********************");
+        System.out.println(SEPARATOR);
 
         Duck modelDuck = new ModelDuck();
         modelDuck.display();

@@ -2,8 +2,8 @@ package com.imorochi.simuduck;
 
 public abstract class Duck {
 
-    public FlyBehavior flyBehavior;
-    public QuackBehavior quackBehavior;
+    protected FlyBehavior flyBehavior;
+    protected QuackBehavior quackBehavior;
 
     public abstract void display();
 
